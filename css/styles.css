@@ -7,3 +7,42 @@ section {
     padding: 1rem;
 }
 /* developer styles go here */
+
+h1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /** has no direct siblings */
+}
+
+h2 {
+    background: tomato;
+    padding: 1rem 0.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /**this works because the p and h3 are direct siblings of the h2 **/
+    /* sticky positioning can be thought of as a hybrid of relative and fixed positioning. A stickily positioned element is treated as relatively positioned until it crosses it specified threshold, at which point it is treated as fixed until it reaches it boundary of its parents **/
+
+}
+
+h3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 68px;
+    background: white;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    max-width: 60ch; /** ch - characters per line **/
+}
+
+.snowflake {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+}
